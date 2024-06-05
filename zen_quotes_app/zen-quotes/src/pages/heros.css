@@ -1,0 +1,23 @@
+.heros {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+.left, .right{
+    width: 50%;
+    border: 2px solid red;
+    padding: 2rem;
+    height: 70vh;
+}
+.left{
+    border: 2px solid black;
+    margin-right: 2rem;
+    position: relative;
+}
+.right{
+    margin-left: 2rem;
+    position: relative;
+
+}
