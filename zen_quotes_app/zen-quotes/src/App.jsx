@@ -1,9 +1,11 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
+import { GrNext } from "react-icons/gr";
 import Heros from "./pages/Heros";
 import './App.css'
-
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { RiDoubleQuotesR } from "react-icons/ri";
 const App = () => {
 const [quote, setQuote] = useState("");
 
@@ -28,8 +30,13 @@ useEffect(() => {
       <Header />
       <Heros />
       <div className="advice">
-        <p className="advice-text">{quote}</p>
-        <button onClick={advices}>click me</button>
+        <p className="advice-text">
+          <RiDoubleQuotesL className="quotes" />
+          {quote}
+
+          <RiDoubleQuotesR className="quotes" />
+        </p>
+        <button onClick={advices}>Next Quote<GrNext className="next"/></button>
       </div>
     </div>
   );

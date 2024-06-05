@@ -1,7 +1,7 @@
 .advice{
   width: 30%;
   position: absolute;
-  border: 2px solid black;
+  border: 1px solid black;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -10,4 +10,47 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: .5rem;
+  border-radius: 1rem;
+  background-color: #FF2992;
+}
+
+.advice button{
+  width: 10rem;
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border-radius: .5rem;
+  cursor: pointer;
+  font-size: large;
+  font-weight: 700;
+  display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.advice button:hover{
+  background-color: blueviolet;
+  transition: all ease-in 1s;
+  width: 10.5rem;
+  color: white;
+  
+}
+
+.quotes{
+  padding: .5rem;
+  fill: blue;
+}
+
+.advice p{
+  font-size: 1.5rem;
+  text-align: justify;
+  line-height: 1.7;
+  padding: .5rem;
+  letter-spacing: .1rem;
+}
+
+.next{
+  border: 2px solid red;
+  text-align: center;
+  margin-top: auto;
 }

@@ -7,17 +7,14 @@
 }
 .left, .right{
     width: 50%;
-    border: 2px solid red;
-    padding: 2rem;
-    height: 70vh;
+    height: 85vh;
 }
 .left{
-    border: 2px solid black;
-    margin-right: 2rem;
     position: relative;
+    background-color: #00B8FB;
 }
 .right{
-    margin-left: 2rem;
     position: relative;
-
+    background-color: #8A40FE;
 }
+

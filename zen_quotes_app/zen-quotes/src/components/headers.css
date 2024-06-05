@@ -3,4 +3,13 @@ h1{
     text-align: center;
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
+    background: #18082C;
+    color: white;
+    padding-top: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
