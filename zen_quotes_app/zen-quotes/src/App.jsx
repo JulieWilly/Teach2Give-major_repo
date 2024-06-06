@@ -3,33 +3,31 @@ import React, { useEffect, useState } from "react";
 import Header from "./components/Header";
 import { GrNext } from "react-icons/gr";
 import Heros from "./pages/Heros";
-import './App.css'
+import "./App.css";
 import { RxReload } from "react-icons/rx";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
 const App = () => {
-const [quote, setQuote] = useState("");
-const [isLoading, setLoading ]= useState(false)
+  const [quote, setQuote] = useState("");
+  const [isLoading, setLoading] = useState(false);
 
-const advices = async () => {
-  try {
-    setLoading(true)
+  const advices = async () => {
+    try {
+      setLoading(true);
 
-    const response = await fetch("https://api.adviceslip.com/advice")
-    let adviceData = await response.json();
-    // console.log(adviceData);
-    setQuote(adviceData.slip.advice);
-    setLoading(false);
+      const response = await fetch("https://api.adviceslip.com/advice");
+      let adviceData = await response.json();
+      // console.log(adviceData);
+      setQuote(adviceData.slip.advice);
+      setLoading(false);
+    } catch (error) {
+      console.log(`this is the error ${error}`);
+    }
+  };
 
-  } catch (error) {
-    console.log(`this is the error ${error}`);
-  }
-};
-
-
-useEffect(() => {
-  advices();
-}, []);
+  useEffect(() => {
+    advices();
+  }, []);
 
   return (
     <div>
