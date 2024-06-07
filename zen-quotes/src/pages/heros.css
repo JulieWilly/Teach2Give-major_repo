@@ -1,0 +1,19 @@
+.heros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.left,
+.right {
+  width: 50%;
+  height: 85vh;
+}
+.left {
+  position: relative;
+  background-color: #00b8fb;
+}
+.right {
+  position: relative;
+  background-color: #8a40fe;
+}
